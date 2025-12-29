@@ -1,0 +1,234 @@
+/* General Styling Start */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button{
+    padding: 10px;
+    border-radius: 7px;
+    color: #fff;
+    border: none;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #0074E4;
+}
+p{
+    color: #a3a3a3;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    border: none;
+}
+body{
+    background: #fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container{
+    margin: 0 70px 0 70px;
+    padding: 20px 0 20px 0;
+}
+/* General Styling End */
+
+/* Nav Styling Start */
+.logoContainer{
+    flex: 1;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navLinks{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+}
+.navItem{
+    display: flex;
+    text-align: center;
+}
+.navItems{
+    margin-left: 25px;
+}
+.quote{
+    background-color: #0074E4;
+}
+/* Nav Styling End */
+
+/* Landing Page Styling Start */
+.landingPage{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 83vh;
+}
+.details{
+    flex: 1 1 50%;
+}
+.details figcaption{
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+.details summary{
+    max-width: 500px;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.imageContainer{
+    flex: 1 1 50%;
+}
+.factoryImage{
+    width: fit-content;
+    align-items: center;
+    border-radius: 15px;
+}
+.view{
+    color: #0074E4;
+    background-color: #fff;
+    border: 1px solid #0074E4;
+}
+/* Landing Page Styling End */
+
+/* Article Page Styling Start */
+.about{
+    background: #0074E4;
+    color: #fff;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 40px 60px 40px 60px;
+    text-align: center;
+}
+.about h3{
+    margin-bottom: 10px;
+}
+/* Article Page Styling End */
+
+/* Capabilities Page Styling Start */
+.capabilities{
+    padding-top: 50px;
+    height: 80vh;
+}
+.capDetails{
+    text-align: center;
+}
+.capDetails p{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.capItems{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.capItem{
+    border: 1px solid #ddd;
+    background: #faf9f9;
+    width: 270px;
+    height: 250px;
+    padding: 20px;
+    margin-left: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 8px;
+}
+/* Capabilities Page Styling End */
+
+/* Industies Page Styling start */
+.industries{
+    padding-top: 35px;
+    background-color: #d3e7fc;
+    height: 60vh;
+}
+.industriesDetails h2{
+    margin-bottom: 10px;
+}
+.industriesDetails p{
+    margin-bottom: 35px;
+}
+.industriesItems{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    gap: 20px;
+    
+}
+.industriesItem{
+    position: relative;
+}
+.industriesItem h3{
+    color: #fff;
+    text-align: center;
+    z-index: 1000;
+}
+.industriesImage{
+    border-radius: 10px;
+}
+.industriesTitle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 98%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    overflow: hidden;
+    border-radius: 10px;
+}
+/* Industrie Page Styling End */
+
+/* Contact Page Styling End */
+.contact{
+    display: flex;
+    height: 80vh;
+    padding-top: 30px;
+}
+.contactUs{
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.contactUs h3{
+    margin-bottom: 20px;
+}
+.form{
+    flex: 2 1 50%;
+    background-color: #ddd;
+    padding: 30px;
+    border-radius: 10px;
+}
+.form input,
+.form textarea{
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: none;
+    margin: 10px 0;
+}
+.form input:focus,
+.form textarea:focus{
+    border: 2px solid #0074E4;
+}
+.form label{
+    opacity: 0.5;
+}
