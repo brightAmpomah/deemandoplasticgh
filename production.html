@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Data -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title>Production</title>
+
+    <!-- Customed CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="productionBody">
+    <div class="production">
+        <aside>
+            <div class="asideLogo">
+                <a href="index.html"><h3>Deemando</h3></a>
+            </div>
+            <div class="asideLinks">
+                <div class="asideItem1">
+                    <p style="text-decoration: underline;">Operations</p>
+                    <a href="#">Dashboard</a>
+                    <a href="#" class="active">Production Entry</a>
+                    <a href="#">Work Orders</a>
+                    <a href="#">Inventory</a>
+                </div>
+                <div class="asideItem2">
+                    <p style="text-decoration: underline;">Quality Assurance</p>
+                    <a href="#">Inspection</a>
+                    <a href="#">Non-comformances</a>
+                </div>
+            </div>
+        </aside>
+        <main>
+            <header class="mainHeader">
+                <div class="mainTitle">
+                    <h2>Production Entry</h2>
+                    <p>Capture real-time production data from active work orders.</p>
+                </div>
+                <div class="mainEntries">
+                    <time>Today: 31 Dec 2025</time>
+                    <button class="view">View History</button>
+                    <button class="quote">New Entry</button>
+                </div>
+            </header>
+            <div class="productionDetails">
+
+                <section class="logs">
+                    <div class="productionLogs">
+                        <div class="productionLogsTitle">
+                            <h4>Production Logs</h4>
+                            <p>Select work order and record quantity</p>
+                        </div>
+                        <div class="productionLogsbutton">
+                            <select>
+                                <option value="Day Shift">Day Shift</option>
+                                <option value="Noon Shift">Noon Shift</option>
+                                <option value="Evening Shift">Evening Shift</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="logsInput">
+                        <form>
+                            <div class="form1">
+                                <div>
+                                    <label for="workOrder">Work Order</label>
+                                    <select name="workOrder" id="workOrder">
+                                        <option value="WO-0001">WO-0001</option>
+                                        <option value="WO-0002">WO-0002</option>
+                                        <option value="WO-0003">WO-0003</option>
+                                        <option value="WO-0004">WO-0004</option>
+                                        <option value="WO-0005">WO-0005</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="operation">Operation</label>
+                                    <select name="operation" id="operation">
+                                        <option value="Ld">LD</option>
+                                        <option value="Hm">HM</option>
+                                        <option value="Pp">PP</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form2">
+                                <div>
+                                    <label for="machine">Machine</label>
+                                    <select name="machine" id="machine">
+                                        <option value="Extrusion">EXTRUSION</option>
+                                        <option value="Flexo">FLEXO PRINTING</option>
+                                        <option value="Roto">ROTO PRINTING</option>
+                                        <option value="Cutting">CUTTING</option>
+                                        <option value="Recycle">RECYCLE</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="operator">Operator</label>
+                                    <select name="operator" id="operator">
+                                        <option value="abraham">ABRAHAM</option>
+                                        <option value="Isaac">ISAAC</option>
+                                        <option value="Bill">BILL</option>
+                                        <option value="Richard">RICHARD</option>
+                                        <option value="Sam">SAM</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form3">
+                                <div>
+                                    <label for="order">Order Quantity</label>
+                                    <input id="order" type="number" required>
+                                </div>
+                                <div>
+                                    <label for="scrap">Scrap Quantity</label>
+                                    <input id="scrap" type="number" required>
+                                </div>
+                            </div>
+                             
+                        </form>
+                    </div>
+                    <div class="logsSummary">
+                        <div class="note">
+                            <label for="note">Note</label>
+                            <textarea name="note" id="note" rows="5"></textarea>
+                        </div>
+                        <div class="submit">
+                            <div class="mark">
+                                <input type="checkbox">
+                                <label for="mark">Mark operation as complete</label>
+                            </div>
+                            <div class="summaryButton">
+                                <button type="button" class="view">Save Draft</button>
+                                <button type="button" class="quote">Submit Entry</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="workSummary">
+                        <p>Current work order summary</p>
+                        <div class="orderSummary">
+                            <div class="order">
+                                <label>Order Quantity</label>
+                                <h3>10,000 kilos</h3>
+                                <div>
+                                    <p style="font-size: 10px;">Good: 9892.10</p>
+                                    <p style="font-size: 10px;">Scrap: 107.90</p>
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <label>Progress</label>
+                                <progress>
+                                    
+                                </progress>
+                                <div>
+                                    <p style="font-size: 10px;">Due: Today</p>
+                                </div>
+                            </div>
+                            <div class="shift">
+                                <label>Shifts</label>
+                                <h3>88%</h3>
+                                <div>
+                                    <p style="font-size: 10px;">Availability: 98%</p>
+                                    <p style="font-size: 10px;">Quality: 93%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="recent">
+                    <div class="productionLogs">
+                        <div class="productionLogsTitle">
+                            <h4>Recent Entries</h4>
+                            <p>Lastest updates from this line</p>
+                        </div>
+                        <div class="all">
+                            <a href="#">All Lines</a>
+                        </div>
+                    </div>
+                    <div class="recentData">
+                        <table>
+                            <tr>
+                                <th>Time</th>
+                                <th>Work Order</th>
+                                <th>Machine</th>
+                                <th>Operator</th>
+                                <th>Total Quantity (Kg)</th>
+                            </tr>
+                            <tr>
+                                <td>18:45</td>
+                                <td>WO-0037</td>
+                                <td>Extrusion</td>
+                                <td>Abraham</td>
+                                <td>190.7</td>
+                            </tr>
+                            <tr>
+                                <td>18:25</td>
+                                <td>WO-0017</td>
+                                <td>Cutting</td>
+                                <td>Isaac</td>
+                                <td>291.4</td>
+                            </tr>
+                            <tr>
+                                <td>18:29</td>
+                                <td>WO-0007</td>
+                                <td>Flexo Printing</td>
+                                <td>Emmanuel</td>
+                                <td>111.9</td>
+                            </tr>
+                            <tr>
+                                <td>18:33</td>
+                                <td>WO-0111</td>
+                                <td>Extrusion</td>
+                                <td>Abraham</td>
+                                <td>91.6</td>
+                            </tr>
+                        </table>
+                    </div>
+                </section>
+            </div>
+            
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Data -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title>Sales Overview</title>
+
+    <!-- Customed CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=settings" />
+
+</head>
+<body class="productionBody">
+    <div class="production">
+        <aside>
+            <div class="asideLogo">
+                <a href="index.html"><h3>Deemando</h3></a>
+            </div>
+            <div class="asideLinks">
+                <div class="asideItem1">
+                    <p style="text-decoration: underline;">Main</p>
+                    <a href="#" class="active">Dashboard</a>
+                    <a href="#">Inbox </a> <!--<span style="width: 20px; color: white; background-color: #0074e4; text-align: center; border-radius: 50%;">4</span>-->
+                </div>
+                <div class="asideItem2">
+                    <p style="text-decoration: underline;">Sales</p>
+                    <a href="#">Quote</a>
+                    <a href="#">Customers</a>
+                    <a href="#">Orders</a>
+                    <a href="#">Invoices</a>
+                    <a href="#">Insights</a>
+                </div>
+            </div>
+            <div class="setting">
+                <img style="width: 15px; height: 15px; background: #0074e4; border-radius: 50%;" src="assert/settings.svg" alt=""> <a href="#">Settings</a>
+            </div>
+        </aside>
+        <main>
+            <header style="margin-bottom: 10px;" class="mainHeader">
+                <div class="mainTitle">
+                    <h2>Sale's Overview</h2>
+                    <p>Welcome back, here's what is happening with your pipeline today.</p>
+                </div>
+                <div class="mainEntries">
+                    <button style="display: flex; align-items: center; justify-content: center;" class="view"> <span style="opacity: 1;"><img style="width: 15px; height: 15px;" src="assert/download.svg" alt=""></span> Export Report</button>
+                    <button class="quote">New Quote</button>
+                </div>
+            </header>
+            <section class="overview">
+                <div class="totalRevenue">
+                    <div class="top">
+                        <p>Total Revenue(MTD)</p>
+                        <span>GH¢</span>
+                    </div>
+                    <div class="figure">
+                        <h1>GHS 170,000</h1>
+                    </div>
+                    <div  class="comment">
+                        <p style="color: rgb(88, 119, 88)"><img src="assert/trending_up.svg" alt=""> +12.5% from last month</p>
+                    </div>
+                </div>
+                <div class="activeQuote">
+                    <div class="top">
+                        <p>Active Quotes</p>
+                        <span style="opacity: 1;"><img src="assert/event_note.svg" alt=""></span>
+                    </div>
+                    <div class="figure">
+                        <h1>24</h1>
+                    </div>
+                    <div class="comment">
+                        <p style="color: rgb(88, 119, 88)">12 awaiting approval</p>
+                    </div>
+                </div>
+                <div class="winRate">
+                    <div class="top">
+                        <p>Win Rate</p>
+                        <span style="opacity: 1;"><img src="assert/license.svg" alt=""></span>
+                    </div>
+                    <div class="figure">
+                        <h1>38%</h1>
+                    </div>
+                    <div class="comment">
+                        <p style="color: rgb(88, 119, 88);"><img src="assert/trending_up.svg" alt=""> +1.2% vs target</p>
+                    </div>
+                </div>
+                <div class="pipelineValue">
+                    <div class="top">
+                        <p>Pipeline Value</p>
+                        <span style="opacity: 1;"><img src="assert/bar_chart.svg" alt=""></span>
+                    </div>
+                    <div class="figure">
+                        <h1>GHS 1.7M</h1>
+                    </div>
+                    <div class="comment">
+                        <p style="color: rgb(155, 82, 56);"><img src="assert/trending_down.svg" alt=""> +4.2% from last week</p>
+                    </div>
+                </div>
+            </section>
+            <section class="overviewSummary">
+                <div class="recentQuote">
+                    <div class="top">
+                        <h4>Recent Quotes</h4>
+                        <a href="#">View All</a>
+                    </div>
+                    <div style="margin-top: 20px;" class="data">
+                        <table>
+                            <tr>
+                                <th>ID</th>
+                                <th>Customers</th>
+                                <th>Value</th>
+                                <th>Date</th>
+                                <th>Status</th>
+                            </tr>
+                            <tr>
+                                <td>QUO-004</td>
+                                <td>IK</td>
+                                <td>GH¢ 20,000</td>
+                                <td>oct 24, 2024</td>
+                                <td style="background-color: rgb(190, 190, 131); color: white;">Negotiation</td>
+                            </tr>
+                            <tr>
+                                <td>INV-003</td>
+                                <td>William Obuasi</td>
+                                <td>GH¢ 15,000</td>
+                                <td>Nov 01, 2024</td>
+                                <td style="background-color: rgb(118, 196, 131); color: white;">Sent</td>
+                            </tr>
+                            <tr>
+                                <td>INV-002</td>
+                                <td>Samuel</td>
+                                <td>GH¢ 10,000</td>
+                                <td>Sept, 17 2024</td>
+                                <td style="background-color: rgb(118, 196, 131); color: white;">Sent</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="recentActions">
+                    <div class="action">
+                        <div style="margin-bottom: 10px;" class="top">
+                            <h4 style="flex: 2 1 30%;">Action Items</h4>
+                            <span style="background-color: red; border-radius: 10px; text-align: center; flex: 1 1 20%; color: white;">2 overdue</span>
+                        </div>
+                        <hr>
+                        <div class="due">
+                            <div class="actionDue1">
+                                <h5>Follow up with Loaf Baker</h5>
+                                <span style="color: rgb(255, 4, 4); opacity: 1;">Due yesterday</span>
+                            </div>
+                            <div class="actionDue2">
+                                <h5>Preper Contract for Amanda</h5>
+                                <span>Due Today</span>
+                            </div>
+                            <div class="actionDue3">
+                                <h5>Quaterly review meetings</h5>
+                                <span>Tomorrow 2:00 PM</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="liveFeed">
+                        <div style="margin-bottom: 10px;" class="top">
+                            <h4>Live Feed</h4>
+                        </div>
+                        <hr>
+                        <div class="due">
+                            <div>
+                                <h5>Order #4539 confirmed by Amanda</h5>
+                                <span>25 mins ago</span>
+                            </div>
+                            <hr style="opacity: 0.5;">
+                            <div>
+                                <h5>Order #4539 confirmed by Amanda</h5>
+                                <span>25 mins ago</span>
+                            </div>
+                            <hr style="opacity: 0.5;">
+                            <div>
+                                <h5>Order #4539 confirmed by Amanda</h5>
+                                <span>25 mins ago</span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div> 
+            </section>
+            
+        </main>
+    </div>
+</body>
+</html>
